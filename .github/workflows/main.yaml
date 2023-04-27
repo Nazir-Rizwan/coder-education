@@ -1,0 +1,22 @@
+---
+Github
+@Nazir-Rizwan 
+name: coder-education
+on:
+  push:
+       [main]
+ 
+ steps:
+      -uses: actioncheckout@v2
+      #run a single command 
+      -name: Installing Node 
+      -uses: action/setup-node@v2
+      with:
+            node-version: 18[]
+      
+      # deploy app into surge
+      
+    -name: installing surge
+    run: npm install -g surge
+    run: surge ./https://coder-education.surge.sh/ --token${{secrets.surge-token}}
+  
