@@ -1,6 +1,6 @@
 
 
-# name: coder-education
+
 on:
   push:
        [main]
