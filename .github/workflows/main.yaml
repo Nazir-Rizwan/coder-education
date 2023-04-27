@@ -18,5 +18,5 @@ on:
       
     -name: installing surge
     run: npm install -g surge
-    run: surge ./https://coder-education.surge.sh/ --token${{secrets.surge-token}}
+    run: surge ./https://coder-education.surge.sh/ --token${{secrets.surge_token}}
   
