@@ -1,7 +1,7 @@
 
 Github
 @Nazir-Rizwan 
-name: coder-education
+# name: coder-education
 on:
   push:
        [main]
